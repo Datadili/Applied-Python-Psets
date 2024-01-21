@@ -1,0 +1,1666 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Homework 1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1. What is a markdown cell in jupyter notebook and how do I change a cell from a markdown cell to a code cell? Use a markdown cell type for this answer."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Your answer here (Please use a markdown cell):\n",
+    "\n",
+    "esc + m"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. In Python, what is the difference between =(single equal) and == (double equal)? Please give an example of each."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Your answer here:\n",
+    "a = 5\n",
+    "b = 6 \n",
+    "a == b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. If I am commenting on my code in a cell, what are the two ways to do this in Python?**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'hello'"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Your answer here: \n",
+    "\"\"\"hello this is no\"\"\"\n",
+    "\n",
+    "# this wont run"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4. Assign your name, your Yale program, and your year of graduation equal to variables of your choosing. Then write a print statement using an \"f string\" that says \"Hello, my name is (name). I am in Yale's (program) and I hope to graduate in (year).\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\"Hello, my name is Dili Maduabum. I am in Yale's Master in IDE program and I hope to graduate in 2024.\""
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Your answer here: \n",
+    "name = \"Dili Maduabum\"\n",
+    "program = \"Master in IDE program\"\n",
+    "year = \"2024\"\n",
+    "\n",
+    "f\"Hello, my name is {name}. I am in Yale's {program} and I hope to graduate in {year}.\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "5. Write the mathematical operators for the following using a markdown cell type and give a code example of each:\n",
+    "\n",
+    "For example: plus: + , 3 + 4\n",
+    "\n",
+    "minus: - , 4 - 3\n",
+    "\n",
+    "multiply: * , 4 * 3\n",
+    "\n",
+    "divide: / , 4 / 3\n",
+    "\n",
+    "find the remainder of two numbers divided: % , 4 % 3\n",
+    "\n",
+    "square: (as in 3 squared is 9) ** 2 , 3** 2\n",
+    "\n",
+    "cube: (as in 2 cubed is 8) ** 3 , 3** 3\n",
+    "\n",
+    "greater than: > , 4 > 3 \n",
+    "\n",
+    "greater than or equal to: >= , 4 >= 3\n",
+    "\n",
+    "less than: < , 3 < 4\n",
+    "\n",
+    "less than or equal to: <= , 3 <= 4"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "6. What is the built-in Python function to determine the type of an object? Give four examples of using this function on four different object types."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'> <class 'float'> <class 'bool'> <class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your answer here: \"type\"\n",
+    " \n",
+    "a = 5\n",
+    "b = 3.5\n",
+    "c = True\n",
+    "d = \"No\"\n",
+    "\n",
+    "print(type(a), type(b), type(c), type(d))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "7. Use the \"replace\" method in python so that the following occurs:\n",
+    "\n",
+    "greeting = \"Hello there students!\"\n",
+    "becomes\n",
+    "print(greeting)\n",
+    "output: \"Hello there Pythonistas!\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello there Pythonistas!\n"
+     ]
+    }
+   ],
+   "source": [
+    "#your code here:\n",
+    "greeting = \"Hello there students!\"\n",
+    "\n",
+    "greeting = greeting.replace(\"students\", \"Pythonistas\")\n",
+    "\n",
+    "print(greeting)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "8.In the following code:\n",
+    "agreement = \"Paris Agreement\" \n",
+    "agreement.replace(\"Paris\", \"Moon\") \n",
+    "print(agreement)\n",
+    "\n",
+    "The output is \"Paris Agreement\", not \"Moon Agreement\"\n",
+    "\n",
+    "Please explain why that is the case. \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Your answer here: Because the change is not stored or assigned back to the agreement object"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "9. Now fix the code using the replace method so that:\n",
+    "   agreement = \"Paris Agreement\"\n",
+    "   when you write:\n",
+    "   print(agreement)\n",
+    "   output is \"Moon Agreement\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Your answer here: agreement = \"Paris Agreement\" agreement = agreement.replace(\"Paris\", \"Moon\") print(agreement)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "10. Please explain why the statement returns \"False\" and write code that fixes the error: \n",
+    "\n",
+    ".3 + .3 + .3 == .9\n",
+    "\n",
+    "It's \"false\" because of computer rounding error I believe."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.9"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Your code here:\n",
+    "round(.3 + .3 + .3, 1) == .9"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "11. I want to make a tip calculator. Step one:\n",
+    "Please use the input method to accept an input from a user prompting them with \"Please enter a price of the meal\" and save\n",
+    " it to the variable \"price\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please enter the price of the meal 9\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here:\n",
+    "price = float(input(\"Please enter the price of the meal \" ))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please enter the price of the meal: 9\n"
+     ]
+    },
+    {
+     "ename": "TypeError",
+     "evalue": "can't multiply sequence by non-int of type 'float'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[39], line 5\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m#12. Here is a script I wrote for a tip calculator:\u001b[39;00m\n\u001b[1;32m      3\u001b[0m price \u001b[38;5;241m=\u001b[39m \u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mPlease enter the price of the meal: \u001b[39m\u001b[38;5;124m\"\u001b[39m )\n\u001b[0;32m----> 5\u001b[0m tip \u001b[38;5;241m=\u001b[39m \u001b[43mprice\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m*\u001b[39;49m\u001b[43m \u001b[49m\u001b[38;5;241;43m0.22\u001b[39;49m\n\u001b[1;32m      7\u001b[0m total \u001b[38;5;241m=\u001b[39m price \u001b[38;5;241m+\u001b[39m tip\n\u001b[1;32m      9\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mA 16\u001b[39m\u001b[38;5;124m%\u001b[39m\u001b[38;5;124m tip would be: \u001b[39m\u001b[38;5;124m\"\u001b[39m, tip)\n",
+      "\u001b[0;31mTypeError\u001b[0m: can't multiply sequence by non-int of type 'float'"
+     ]
+    }
+   ],
+   "source": [
+    "#12. Here is a script I wrote for a tip calculator:\n",
+    "                        \n",
+    "price = input(\"Please enter the price of the meal: \" )\n",
+    "\n",
+    "tip = price * 0.22\n",
+    "\n",
+    "total = price + tip\n",
+    "\n",
+    "print(\"A 16% tip would be: \", tip)\n",
+    "\n",
+    "print(\"The total including tip would be: \", total)\n",
+    "\n",
+    "#The problem is it throws an error! Can you look at this code and see why it is throwing an error without running it? "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Your answer here: The problem was that we can't perform numerical operations on strings. Thus we should convert the user input to a float or int"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "13. Please fix the above code and run it:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please enter the price of the meal: 10\n",
+      "A 16% tip would be:  2.2\n",
+      "The total including tip would be:  12.2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here:\n",
+    "price = float(input(\"Please enter the price of the meal: \" ))\n",
+    "\n",
+    "tip = price * 0.22\n",
+    "\n",
+    "total = price + tip\n",
+    "\n",
+    "print(\"A 16% tip would be: \", tip)\n",
+    "\n",
+    "print(\"The total including tip would be: \", total)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "14. Write a script that takes a user inputted string and checks whether if they are the following\n",
+    "\n",
+    "if it is all alphabets\n",
+    "if it is numeric\n",
+    "if it is all upper case\n",
+    "if it is all lower case"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Write a string of your choice: hello b\n",
+      "The string is all lower case\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here\n",
+    "string = input(\"Write a string of your choice: \")\n",
+    "\n",
+    "if string.isalpha() == True:\n",
+    "    print(\"The string is all alphabets\")\n",
+    "    \n",
+    "if string.isdigit() == True:\n",
+    "    print(\"The string is all numeric\")\n",
+    "\n",
+    "if string.isupper() == True:\n",
+    "    print(\"The string is all lower case\")\n",
+    "    \n",
+    "if string.islower() == True:\n",
+    "    print(\"The string is all lower case\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "15. Write a script that takes a user inputted target_string of your chosing and prints it out in the following three formats.\n",
+    "\n",
+    "All letters capitalized - capitalize( )\n",
+    "\n",
+    "All letters lowercase - lower( )\n",
+    "\n",
+    "All vowels lowercase and all consonants uppercase "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Write a string of your choice: HElloBmAme\n",
+      "All letters capitalized in your string: Hellobmame\n",
+      "All letters lowercase(d) in your string: hellobmame\n",
+      "All vowels lowercase and all consonants uppercase: HeLLoBMaMe\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here\n",
+    "string = input(\"Write a string of your choice: \")\n",
+    "\n",
+    "#f\"All letters capitalized in your string: {string.capitalize()}\"\n",
+    "print(\"All letters capitalized in your string: {}\".format(string.capitalize()))\n",
+    "print(\"All letters lowercase(d) in your string: {}\".format(string.lower()))\n",
+    "\n",
+    "vowels = \"aAeEiIoOuU\" #both small and large\n",
+    "\n",
+    "string_2 = \"\"\n",
+    "for i in string:\n",
+    "    if i not in vowels:\n",
+    "        string_2 += i.upper()\n",
+    "    else: \n",
+    "        string_2 += i.lower()\n",
+    "        \n",
+    "print(\"All vowels lowercase and all consonants uppercase: {}\".format(string_2))\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "16. Assuming a package is not part of the Anaconda build of Python used, how would I:\n",
+    "\n",
+    "a. install a package from my terminal? \n",
+    "\n",
+    "b. install a package from my Jupyter notebook ? \n",
+    "\n",
+    "c. import a package ? \n",
+    "\n",
+    "d. what happens when if I write \"import this\" but don't name a package? (run it below)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The Zen of Python, by Tim Peters\n",
+      "\n",
+      "Beautiful is better than ugly.\n",
+      "Explicit is better than implicit.\n",
+      "Simple is better than complex.\n",
+      "Complex is better than complicated.\n",
+      "Flat is better than nested.\n",
+      "Sparse is better than dense.\n",
+      "Readability counts.\n",
+      "Special cases aren't special enough to break the rules.\n",
+      "Although practicality beats purity.\n",
+      "Errors should never pass silently.\n",
+      "Unless explicitly silenced.\n",
+      "In the face of ambiguity, refuse the temptation to guess.\n",
+      "There should be one-- and preferably only one --obvious way to do it.\n",
+      "Although that way may not be obvious at first unless you're Dutch.\n",
+      "Now is better than never.\n",
+      "Although never is often better than *right* now.\n",
+      "If the implementation is hard to explain, it's a bad idea.\n",
+      "If the implementation is easy to explain, it may be a good idea.\n",
+      "Namespaces are one honking great idea -- let's do more of those!\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here:\n",
+    "#a. pip install \"packageName\" (no quotes)\n",
+    "#b. !pip install \"packageName\" (no quotes)\n",
+    "#c. import \"packageName\" (no quotes)\n",
+    "#d. Import this shows us a peom (?) titled \"The Zen of Python\" by TIm Peters\n",
+    "import this"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "17. statement= 'It's truly one of my favorite quotes: \"Success depends on intuition, on seeing what afterwards proves to be true but cannot be established at the moment\"\n",
+    "#To whom is the previous quote atributed?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Your answer here: Joseph A. Schumpeter "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**18. Copy the code above to the cell below. Run it. Why is it throwing an error? Please fix it.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Your answer here: It's showing an error because \n",
+    "#Your code here: "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "19. Write code, using the strip() method  to remove the white spaces from the beginning and the end of the following and print below:\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hi students. What's going on?!\n"
+     ]
+    }
+   ],
+   "source": [
+    "greeting = \"   Hi students. What's going on?!       \"\n",
+    "# You answer here: \n",
+    "print(greeting.strip())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "20. (2pt) How do you convert a string to all lowercase? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "heello\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your answer here: \n",
+    "\n",
+    "a = \"HEEllo\"\n",
+    "\n",
+    "print(a.lower())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "21. (2pt)How do you convert a string to a list in python? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'list'> ['Python']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your answer here: \n",
+    "b = \"Python\"\n",
+    "\n",
+    "c = [b]\n",
+    "\n",
+    "print(type(c), c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "22. (2pt) How do you convert a string to a tuple in python? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'tuple'> ('Python',)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your answer here: (,)\n",
+    "b = \"Python\"\n",
+    "\n",
+    "c = (b,)\n",
+    "\n",
+    "print(type(c), c)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "23. (2pt) How do you convert a string to an int in python? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'> 25\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your answer here: int()\n",
+    "b = \"25\"\n",
+    "\n",
+    "c = int(b)\n",
+    "\n",
+    "print(type(c), c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "24. (2pt) How do you convert a string to a float in python? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'float'> 60.6\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your answer here: float()\n",
+    "b = \"60.6\"\n",
+    "\n",
+    "c = float(b)\n",
+    "\n",
+    "print(type(c), c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "25. (2pt) What are Python's dictionaries? Give an example of a great use for dictionaries.Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Your answer here: Dictionaries are data types in python. \n",
+    "# It can be useful for data retrival based on a Key. For example, a key could be countries\n",
+    "# and the corresponding values would be their respective capital"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "26. (2pt) Create a dictionary with keys and values. Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: \n",
+    "country_dic = {\"United States\" : \"Washington, D.C.\",\n",
+    "              \"Nigeria\" : \"Abuja\",\n",
+    "              \"China\" : \"Beijing\",\n",
+    "              \"Mexico\" : \"Mexico City\"}\n",
+    "type(country_dic)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "27. (2pt) How do you get all the values from the dictionary? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_values(['Washington, D.C.', 'Abuja', 'Beijing', 'Mexico City'])"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: dict.values()\n",
+    "country_dic = {\"United States\" : \"Washington, D.C.\",\n",
+    "              \"Nigeria\" : \"Abuja\",\n",
+    "              \"China\" : \"Beijing\",\n",
+    "              \"Mexico\" : \"Mexico City\"}\n",
+    "\n",
+    "country_dic.values()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "28. (2pt) How do you get all the keys from the dictionary? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_keys(['United States', 'Nigeria', 'China', 'Mexico'])"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: dict.keys()\n",
+    "country_dic = {\"United States\" : \"Washington, D.C.\",\n",
+    "              \"Nigeria\" : \"Abuja\",\n",
+    "              \"China\" : \"Beijing\",\n",
+    "              \"Mexico\" : \"Mexico City\"}\n",
+    "\n",
+    "country_dic.keys()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "29. (2pt) How do you capitalizes first letter of string? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Python'"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: capitalize()\n",
+    "b = \"python\"\n",
+    "\n",
+    "c = b.capitalize()\n",
+    "\n",
+    "c"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "30. (2pt) How do you check in a string that all characters are digits? Give an example.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: isdigit()\n",
+    "b = \"23445\"\n",
+    "\n",
+    "b.isdigit()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "31. (2pt) How do you check in a string that all characters are alphanumeric? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: isalnum()\n",
+    "b = \"123abc\"\n",
+    "\n",
+    "b.isalnum()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "32. (2pt) How do you check in a string that all characters are in lowercase? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: islower()\n",
+    "\n",
+    "b = \"hello\"\n",
+    "b.islower()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**33. (2pt) How do you check in a string that all characters are not numbers. Give an example.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 138,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: if the string has some characters then it is not fully numeric. Thus I am using \".isnumeric()\"\n",
+    "b = \"1234the\"\n",
+    "\n",
+    "b.isnumeric()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "33. (2pt) How do you get the length of the string? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: len()\n",
+    "b = 'python'\n",
+    "len(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "34. (2pt) How do you convert a string to all lowercase? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'python'"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: \n",
+    "b = \"PyThOn\"\n",
+    "\n",
+    "b.lower()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "35. (2pt) How do you remove all leading whitespace in string? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Python is cool'"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: strip()\n",
+    "\n",
+    "b = \"    Python is cool\"\n",
+    "b.strip()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "36. (2pt) What is the difference between del() and remove() methods of list? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Using remove(): [1, 3, 4, 5] \n",
+      "Using del(): [1, 2, 4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your answer here: del removes the index (not a function of the list\n",
+    "# remove() is a function of the list and it removes an element by the name\n",
+    "b = [1, 2, 3, 4, 5]\n",
+    "b_copy = [1, 2, 3, 4, 5]\n",
+    "\n",
+    "b.remove(2)\n",
+    "del b_copy[2]\n",
+    "\n",
+    "print(\"Using remove():\", b, \n",
+    "      \"\\nUsing del():\", b_copy)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "37. (2pt) How do you get the index of an object in a list? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: index()\n",
+    "b = [1, 2, 3, 4, 5]\n",
+    "b.index(2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "38. (2pt) How do you insert an object at given index in a list? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 6, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: insert()\n",
+    "b = [1, 2, 3, 4, 5]\n",
+    "b.insert(2, 6)\n",
+    "\n",
+    "b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "39. (2pt) How do you get the length of a list? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: len()\n",
+    "b = [1, 2, 3, 4, 5]\n",
+    "len(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "40. (2pt) How do you remove last object from a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4]"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: .pop(-1)\n",
+    "b = [1, 2, 3, 4, 5]\n",
+    "b.pop(-1)\n",
+    "b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "41. (2pt) How do you reverse a list? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[5, 4, 3, 2, 1]"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Your answer here: \n",
+    "b = [1, 2, 3, 4, 5]\n",
+    "b.reverse()\n",
+    "b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "42. (2pt) How would you slice a list? Give an example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3] \n",
+      " [4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your answer here: \n",
+    "b = [1, 2, 3, 4, 5, 6]\n",
+    "\n",
+    "c = b[:3]\n",
+    "d = b[3:]\n",
+    "print(c, \"\\n\", d)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "43. (10 pts) Iterate through a list and create a new list with only happy words. A happy is anything above the threshold. Print your happy word list without values (just words)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['overjoyed', 'blissful', 'chocolately']\n"
+     ]
+    }
+   ],
+   "source": [
+    "threshold = 0.5\n",
+    "feelings = [('blue', 0.1), ('melancholy',0.4), ('fine', 0.5 ), ('okay',0.5), ('overjoyed',1.0), ('blissful',0.9), ('chocolately',0.8)]\n",
+    "# your code here:\n",
+    "\n",
+    "happy_words = []\n",
+    "for i in feelings:\n",
+    "    if i[1] > threshold:\n",
+    "        happy_words.append(i[0])\n",
+    "\n",
+    "print(happy_words)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "44. (5 pts) Take a user input that takes in a user's name, age.\n",
+    "Create an f string that prints \"Hello \"name\", how does it feel to be \"age?\"\n",
+    "Then create an answer that takes a random choice from your happy_word list, and print \"Gee, it feels \"answer\" to be \"age\". Thanks for asking!\"\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please enter your name: Dili\n",
+      "Your age? 21\n",
+      "Hello Dili, how does it feel to be 21?\n",
+      "Gee, it feels chocolately to be 21. Thanks for asking!\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your code here:\n",
+    "import random # for random choice\n",
+    "\n",
+    "name = input(\"Please enter your name: \")\n",
+    "age = input(\"Your age? \")\n",
+    "\n",
+    "print(f\"Hello {name}, how does it feel to be {age}?\")\n",
+    "\n",
+    "print(f\"Gee, it feels {random.choice(happy_words)} to be {age}. Thanks for asking!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "45. (5 pts) Convert the following quote to a single string assigned to the variable Brzezinski, without numbers or special characters. Print the output. Make sure you add quotation marks to the beginning and end of the quote.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\"Most Americans are close to total ignorance about the world. They are ignorant. That is an unhealthy condition in a country in which foreign policy has to be endorsed by the people if it is to be pursued. And it makes it much more difficult for any president to pursue an intelligent policy that does justice to the complexity of the world.\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "quote = [[('Most Americans ^331 are close to total ignorance about the world. They are ignorant. That is an unhealthy condition in a country in which foreign policy has to be endorsed by the people 402 if it is to be pursued. And 404 it makes it much more difficult for any president to pursue an intelligent %%&* policy that does justice to the complexity of the world.')]]\n",
+    "\n",
+    "# Your code here:\n",
+    "\n",
+    "#to remove the list(s)\n",
+    "for i in quote:\n",
+    "    new_string = i[0]\n",
+    "\n",
+    "temp_string = ''\n",
+    "#Defining special characters\n",
+    "s = '[@_!#$%^&*()<>?/\\|}{~:]'\n",
+    "for i in new_string:\n",
+    "    if (i.isdigit() == False) and (i not in s):\n",
+    "        temp_string += i\n",
+    "\n",
+    "#remove double spacing\n",
+    "temp_string = temp_string.replace(\"  \", \" \")\n",
+    "\n",
+    "#Adding Quotation Marks\n",
+    "Brzezinski = f\"\\\"{temp_string}\\\"\"\n",
+    "print(Brzezinski)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "46. (1pts) There is a wikipedia package for Python! It makes it super easy to collect and parse entries. Install it and print a summary of the Marquis de Lafayette in French."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Gilbert du Motier, marquis de La Fayette, né le 6 septembre 1757 au château de Chavaniac près de Saint-Georges-d'Aurac (Auvergne, actuel département de la Haute-Loire), et mort le 20 mai 1834 à Paris (ancien 1er arrondissement), est un officier et homme politique français, célèbre en raison de son engagement dans les rangs de l'armée des insurgés américains (1777-1783), puis dans l'aile libérale et réformiste de l'aristocratie française (1784-1792), enfin dans l'opposition libérale au régime de la monarchie de Juillet qu'il avait pourtant contribué à établir lors des Trois Glorieuses (juillet 1830).\n",
+      "Convaincu de la noblesse de la cause des insurgés américains, il s'engage à leurs côtés en 1777. Nommé général à l'âge de 19 ans par George Washington, La Fayette joue un rôle décisif dans la guerre d'indépendance des États-Unis contre la Grande-Bretagne, notamment lors de la victoire de Yorktown le 19 octobre 1781. Surnommé le « héros des deux mondes », il est depuis 2002 un des huit citoyens d'honneur des États-Unis. Il y fait d'ailleurs à l'invitation du président James Monroe un voyage triomphal en 1824, au cours duquel il est accueilli et honoré dans 182 villes des 24 États que compte l'Union à cette époque.\n",
+      "Après avoir combattu aux États-Unis, La Fayette œuvre en France à la rénovation du pouvoir royal, avant de devenir une des grandes personnalités de la Révolution française, avec la rédaction de la déclaration des droits de l'homme et du citoyen et le commandement de la Garde nationale, jusqu'à son émigration en 1792 après avoir déserté son poste en espérant rallier l’armée prussienne. Il est néanmoins arrêté et incarcéré pendant cinq ans par les autorités autrichiennes et prussiennes.\n",
+      "La Fayette est aussi un acteur politique majeur de la révolution de Juillet en 1830 et des débuts de la monarchie de Juillet, rompant cependant rapidement avec le roi Louis-Philippe dont il avait soutenu l'accession au trône. Durant cette dernière période de sa vie, il s'affirme aussi comme un soutien majeur à la Pologne après l'insurrection de 1830-1831.\n",
+      "À partir de 1789, La Fayette signe ses courriers « Lafayette » en un seul mot, en réaction contre le système nobiliaire abattu par la révolution. C'est cette graphie qui est utilisée par ses contemporains jusqu'à sa mort.\n",
+      "\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Your code here:\n",
+    "#!pip install wikipedia (to install, no need to do it again?)\n",
+    "import wikipedia \n",
+    "\n",
+    "#topic\n",
+    "search = \"Marquis de La Fayette\"\n",
+    "\n",
+    "#set language to french\n",
+    "wikipedia.set_lang('fr')\n",
+    "\n",
+    "#print the summary\n",
+    "print(wikipedia.summary(search))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "47. (4pts) Write a function that takes two arguments, name and hometown  and prints a statement that says, \"Well hello 'name', you must be from 'hometown' as an f string when called."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Well hello Dili, you must be from Nigeria\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here:\n",
+    "def name_home(name, hometown):\n",
+    "    print(f\"Well hello {name}, you must be from {hometown}\")\n",
+    "    \n",
+    "name_home(\"Dili\", \"Nigeria\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "48. Write a script that takes an age as a user input and prints the following, based on conditions, using if, elif, and else:\n",
+    "\n",
+    "If the age is 1-18: print \"This individual is a minor. Their brain is still growing.\"\n",
+    "    \n",
+    "If the age is 19-25: print. \"Though the brain may be done growing in size, it does not finish developing and maturing until the mid- to late 20s\"\n",
+    "    \n",
+    "If the age is 26-40: \"Accomplish what you can before your brain rots!\"\n",
+    "    \n",
+    "If the age is 41-100: \"Don't despair! For the first time, researchers have been able to identify superagers MRI images of the brains of superagers with an average age of 67 are remarkably similar to the brain of 25-year-olds.\"m"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "what is your age? 84\n",
+      "Don't despair! For the first time, researchers have been able to identify superagers MRI images of the brains of superagers with an average age of 67 are remarkably similar to the brain of 25-year-olds.\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here:\n",
+    "age = int(input(\"what is your age? \"))\n",
+    "\n",
+    "if age >= 1 and age <= 18:\n",
+    "    print(\"This individual is a minor. Their brain is still growing.\")\n",
+    "elif age >= 19 and age <= 25:\n",
+    "    print(\"Though the brain may be done growing in size, it does not finish developing and maturing until the mid- to late 20s\")\n",
+    "elif age >= 26 and age <= 40:\n",
+    "    print(\"Accomplish what you can before your brain rots!\")\n",
+    "elif (age >= 41 and age <= 100):\n",
+    "    print(\"Don't despair! For the first time, researchers have been able to identify superagers MRI images of the brains of superagers with an average age of 67 are remarkably similar to the brain of 25-year-olds.\")\n",
+    "else:\n",
+    "    print(\"Is this really your age?\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "49. Write a while loop that counts down from 20 to \"blastoff\":\n",
+    "\n",
+    "hint: decrement each time using n = n -1 or using -=\n",
+    "\n",
+    "n = 20"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "20\n",
+      "19\n",
+      "18\n",
+      "17\n",
+      "16\n",
+      "15\n",
+      "14\n",
+      "13\n",
+      "12\n",
+      "11\n",
+      "10\n",
+      "9\n",
+      "8\n",
+      "7\n",
+      "6\n",
+      "5\n",
+      "4\n",
+      "3\n",
+      "2\n",
+      "1\n",
+      "blastoff\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Your code here:\n",
+    "n = 20\n",
+    "boolean = True\n",
+    "while boolean:\n",
+    "    print(n)\n",
+    "    n = n - 1\n",
+    "    if n == 0:\n",
+    "        print(\"blastoff\")\n",
+    "        boolean = False #to stop the while loop (while False)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Jackson Python\n"
+     ]
+    }
+   ],
+   "source": [
+    "50.#Write code, usting the strip method, to remove the unecessary characters, and add a space to print Jackson Python\n",
+    "\n",
+    "jackson_string = \"grrrrr....ughhhh..JacksonPython@@@!!!!\"\n",
+    "new_string = jackson_string.strip('.@!grrrrrughhhh')\n",
+    "jackson_string = new_string[:7] + ' ' + new_string[7:]\n",
+    "print(jackson_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'/Users/ck_mac_pro/Downloads'"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "pwd"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
